@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3470" started-at="2018-10-04T12:51:48Z" finished-at="2018-10-04T12:51:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3470" started-at="2018-10-04T12:51:48Z" finished-at="2018-10-04T12:51:51Z">
+      <class name="LoginModuleTests.DataDrivenLoginTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="setup" is-config="true" duration-ms="2343" started-at="2018-10-04T18:21:48Z" finished-at="2018-10-04T18:21:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="347" started-at="2018-10-04T18:21:50Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwert123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="204" started-at="2018-10-04T18:21:51Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwe@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwer123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="197" started-at="2018-10-04T18:21:51Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwezx@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwer123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="213" started-at="2018-10-04T18:21:51Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qweqwe@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwer123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="teardown" is-config="true" duration-ms="131" started-at="2018-10-04T18:21:51Z" finished-at="2018-10-04T18:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LoginModuleTests.DataDrivenLoginTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

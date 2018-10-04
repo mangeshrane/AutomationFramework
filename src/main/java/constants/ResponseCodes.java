@@ -2,7 +2,7 @@ package constants;
 
 public final class ResponseCodes {
 	
-	public static String SUCCESS = "200";
+	public final static String SUCCESS = "200";
 	public static String CREATED = "201";
 	public static String ACCEPTED = "202";
 	public static String NO_CONTENT = "204";

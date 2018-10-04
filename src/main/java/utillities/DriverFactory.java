@@ -9,8 +9,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import configProvider.Configuration;
+import testBase.BaseClass;
 
-public class DriverFactory {
+public class DriverFactory extends BaseClass{
 
 	private WebDriver driver;
 
@@ -31,25 +32,30 @@ public class DriverFactory {
 			case CHROME:
 				System.setProperty("webdriver.chrome.driver", Configuration.getConfig("webdriver.chrome.driver"));
 				driver = new ChromeDriver();
+				log.info("Chrome Browser Started");
 				break;
 
 			case FIREFOX:
 				System.setProperty("webdriver.ghecko.driver", Configuration.getConfig("webdriver.ghecko.driver"));
 				driver = new FirefoxDriver();
+				log.info("Firefox Browser Started");
 				break;
 
 			case IE:
 				System.setProperty("webdriver.ie.driver", Configuration.getConfig("webdriver.ie.driver"));
 				driver = new InternetExplorerDriver();
+				log.info("IE Browser Started");
 				break;
 
 			case SAFARI:
 				System.setProperty("webdriver.safari.noinstall", "true"); // To stop uninstall each time
 				driver = new SafariDriver();
+				log.info("SAFARI Browser Started");
 
 			default:
 				System.setProperty("webdriver.chrome.driver", Configuration.getConfig("webdriver.chrome.driver"));
 				driver = new ChromeDriver();
+				log.info("using deafult Chrome Browser Started");
 				break;
 			}
 		}

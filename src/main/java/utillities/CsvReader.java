@@ -12,7 +12,6 @@ import java.util.List;
 
 public class CsvReader {
 
-	private static CsvReader reader;
 	static BufferedReader br = null;
 	private static List<String> headers = new ArrayList<String>();
 	static String seperator = " ";
