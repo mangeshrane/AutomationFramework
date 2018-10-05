@@ -8,14 +8,17 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 import testBase.BaseClass;
 
 /**
  * @author Mangesh
  * 
  */
-public class Configuration extends BaseClass{
+public class Configuration {
 	
+	static Logger log = Logger.getLogger("AutomationFramework");
 	private ClassLoader loader = getClass().getClassLoader();
 	private File file;
 	static Properties config;
@@ -38,10 +41,11 @@ public class Configuration extends BaseClass{
 		try {
 		if (configuration == null) {
 				configuration = new Configuration();
-			
 				value = config.getProperty(key);
+				log.info("Returning value for " + key + " Value: " + value);
 		} else {
 			value =  config.getProperty(key);
+			log.info("Returning value for " + key + " Value: " + value);
 		}
 		} catch (IOException e) {
 			log.error("Error in Loading Config File /Getting property from properties File");

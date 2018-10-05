@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import configProvider.Configuration;
 import pages.LoginPage;
 import testBase.BaseClass;
-import utillities.DriverFactory;
 
 public class LoginTests extends BaseClass{
 	
@@ -19,7 +18,7 @@ public class LoginTests extends BaseClass{
 	
 	@BeforeClass
 	public void setup() {
-		driver = new DriverFactory().getDriver(); 
+		driver = new BaseClass().getDriver();
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
 		driver.get(Configuration.getConfig("application.url"));
 	}
