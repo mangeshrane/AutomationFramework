@@ -34,15 +34,19 @@ public class Configuration extends BaseClass{
 	}
 
 	public static String getConfig(String key) {
+		String value = null;
+		try {
 		if (configuration == null) {
-			try {
 				configuration = new Configuration();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			return config.getProperty(key);
+			
+				value = config.getProperty(key);
 		} else {
-			return config.getProperty(key);
+			value =  config.getProperty(key);
 		}
+		} catch (IOException e) {
+			log.error("Error in Loading Config File /Getting property from properties File");
+			e.printStackTrace();
+		}
+		return value;
 	}
 }

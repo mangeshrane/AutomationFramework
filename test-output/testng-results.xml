@@ -2,16 +2,22 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3470" started-at="2018-10-04T12:51:48Z" finished-at="2018-10-04T12:51:51Z">
+  <suite name="Suite" duration-ms="6541" started-at="2018-10-05T08:56:28Z" finished-at="2018-10-05T08:56:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3470" started-at="2018-10-04T12:51:48Z" finished-at="2018-10-04T12:51:51Z">
-      <class name="LoginModuleTests.DataDrivenLoginTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="setup" is-config="true" duration-ms="2343" started-at="2018-10-04T18:21:48Z" finished-at="2018-10-04T18:21:50Z">
+    <test name="Test" duration-ms="6541" started-at="2018-10-05T08:56:28Z" finished-at="2018-10-05T08:56:35Z">
+      <class name="LoginModuleTests.LoginTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModuleTests.LoginTests@4e1d422d]" name="setup" is-config="true" duration-ms="5011" started-at="2018-10-05T14:26:28Z" finished-at="2018-10-05T14:26:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="347" started-at="2018-10-04T18:21:50Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+      </class> <!-- LoginModuleTests.LoginTests -->
+      <class name="LoginModuleTests.DataDrivenLoginTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@148080bb]" name="setup" is-config="true" duration-ms="4925" started-at="2018-10-05T14:26:28Z" finished-at="2018-10-05T14:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@148080bb]" name="login" duration-ms="506" started-at="2018-10-05T14:26:33Z" data-provider="loginCredentials" finished-at="2018-10-05T14:26:34Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="204" started-at="2018-10-04T18:21:51Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@148080bb]" name="login" duration-ms="269" started-at="2018-10-05T14:26:34Z" data-provider="loginCredentials" finished-at="2018-10-05T14:26:34Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="197" started-at="2018-10-04T18:21:51Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@148080bb]" name="login" duration-ms="218" started-at="2018-10-05T14:26:34Z" data-provider="loginCredentials" finished-at="2018-10-05T14:26:34Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +65,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="login" duration-ms="213" started-at="2018-10-04T18:21:51Z" data-provider="loginCredentials" finished-at="2018-10-04T18:21:51Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@148080bb]" name="login" duration-ms="297" started-at="2018-10-05T14:26:34Z" data-provider="loginCredentials" finished-at="2018-10-05T14:26:35Z">
           <params>
             <param index="0">
               <value>
@@ -75,11 +81,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@5cb9f472]" name="teardown" is-config="true" duration-ms="131" started-at="2018-10-04T18:21:51Z" finished-at="2018-10-04T18:21:51Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@148080bb]" name="teardown" is-config="true" duration-ms="130" started-at="2018-10-05T14:26:35Z" finished-at="2018-10-05T14:26:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- LoginModuleTests.DataDrivenLoginTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

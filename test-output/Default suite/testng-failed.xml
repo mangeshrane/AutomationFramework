@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="LoginModuleTests.DataDrivenLoginTests">
+      <class name="LoginModuleTests.LoginTests">
         <methods>
-          <include name="login"/>
           <include name="setup"/>
+          <include name="invalidLogin"/>
         </methods>
-      </class> <!-- LoginModuleTests.DataDrivenLoginTests -->
+      </class> <!-- LoginModuleTests.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

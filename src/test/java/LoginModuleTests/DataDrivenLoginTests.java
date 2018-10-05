@@ -1,5 +1,9 @@
 package LoginModuleTests;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
@@ -30,7 +34,7 @@ public class DataDrivenLoginTests extends BaseClass{
 	public void login(String username, String password) {
 		log.info("Logging in using username: " + username + " password: " + password);
 		loginPage.login(Configuration.getConfig("application.user.username"), Configuration.getConfig("application.user.password"));
-		assertEquals(driver.getTitle(), "Aurus Leave Management");
+		AssertJUnit.assertEquals(driver.getTitle(), "Aurus Leave Management");
 	}
 	
 	@AfterClass

@@ -1,10 +1,9 @@
 package LoginModuleTests;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -29,14 +28,18 @@ public class LoginTests extends BaseClass{
 	@Test
 	public void login() {
 		loginPage.login(Configuration.getConfig("application.user.username"), Configuration.getConfig("application.user.password"));
-		assertEquals(driver.getTitle(), "Aurus Leave Management");
+		AssertJUnit.assertEquals(driver.getTitle(), "Aurus Leave Management");
 	}
 	
 	@Test
 	public void invalidLogin() {
 		loginPage.login("qwertyu", "qwerr134");
-		assertTrue(loginPage.errorMessage.isDisplayed());
+		AssertJUnit.assertTrue(loginPage.errorMessage.isDisplayed());
 	}
 	
+	@AfterClass
+	public void teardown() {
+		driver.quit();
+	}
 	
 }
