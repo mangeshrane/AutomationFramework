@@ -21,9 +21,9 @@ public class BaseClass {
 		CHROME, FIREFOX, IE, SAFARI
 	}
 
-	public void setDriver() {
+	public void setDriver(String browserName) {
 		Browsers browser = Browsers.CHROME;
-		browser = Browsers.valueOf(Configuration.getConfig("webdriver.browser"));
+		browser = browserName != null || browserName != "" ? Browsers.valueOf(browserName): Browsers.valueOf(Configuration.getConfig("webdriver.browser"));
 		if (Configuration.getConfig("webdriver.type").equalsIgnoreCase("GRID")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			driver = new RemoteWebDriver(capabilities);
@@ -36,7 +36,7 @@ public class BaseClass {
 				break;
 
 			case FIREFOX:
-				System.setProperty("webdriver.ghecko.driver", Configuration.getConfig("webdriver.ghecko.driver"));
+				System.setProperty("webdriver.gecko.driver", Configuration.getConfig("webdriver.gecko.driver"));
 				driver = new FirefoxDriver();
 				log.info("Firefox Browser Started");
 				break;

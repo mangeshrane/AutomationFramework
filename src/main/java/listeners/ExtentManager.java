@@ -11,8 +11,7 @@ public class ExtentManager {
     public synchronized static ExtentReports getReporter(){
         if(extent == null){
             //Set HTML reporting file location
-            String workingDir = System.getProperty("user.dir");
-            extent = new ExtentReports(workingDir + System.getProperty("file.seperator") + "target" + System.getProperty("file.seperator") + "ExtentReportResults.html", true);
+            extent = new ExtentReports("target/ExtentReportResults.html", true);
         }
         return extent;
     }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+	<parameter name="browser" value="CHROME"></parameter>
+	<listeners>
+		<listener class-name="listeners.TestListener"></listener>
+	</listeners>
+	<test thread-count="2" name="Test" parallel="classes">
+		<classes>
+			<class name="LoginModuleTests.LoginTests" />
+			<class name="LoginModuleTests.DataDrivenLoginTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

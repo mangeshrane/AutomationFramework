@@ -5,6 +5,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import configProvider.Configuration;
@@ -17,8 +19,10 @@ public class DataDrivenLoginTests extends BaseClass {
 	LoginPage loginPage;
 
 	@BeforeClass
-	public void setup() {
-		driver = new BaseClass().getDriver();
+	@Parameters("browser")
+	public void setup(String browser) {
+		setDriver(browser);
+		driver = getDriver();
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
 		driver.get(Configuration.getConfig("application.url"));
 	}
