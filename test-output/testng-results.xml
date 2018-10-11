@@ -2,90 +2,28 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="3985" started-at="2018-10-05T12:38:03Z" finished-at="2018-10-05T12:38:07Z">
+  <suite name="Suite" duration-ms="4788" started-at="2018-10-11T07:03:20Z" finished-at="2018-10-11T07:03:24Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="3985" started-at="2018-10-05T12:38:03Z" finished-at="2018-10-05T12:38:07Z">
-      <class name="LoginModuleTests.LoginTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModuleTests.LoginTests@5a5a729f]" name="setup" is-config="true" duration-ms="2524" started-at="2018-10-05T18:08:03Z" finished-at="2018-10-05T18:08:06Z">
+    <test name="Test" duration-ms="4788" started-at="2018-10-11T07:03:20Z" finished-at="2018-10-11T07:03:24Z">
+      <class name="RestApiTest.UseCase1Test">
+        <test-method status="PASS" signature="getRequestSchemaValidation()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="getRequestSchemaValidation" duration-ms="3943" started-at="2018-10-11T12:33:20Z" finished-at="2018-10-11T12:33:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- LoginModuleTests.LoginTests -->
-      <class name="LoginModuleTests.DataDrivenLoginTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@1be2019a]" name="setup" is-config="true" duration-ms="2300" started-at="2018-10-05T18:08:03Z" finished-at="2018-10-05T18:08:05Z">
+        </test-method> <!-- getRequestSchemaValidation -->
+        <test-method status="PASS" signature="getRequestWithParams()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="getRequestWithParams" duration-ms="3454" started-at="2018-10-11T12:33:20Z" finished-at="2018-10-11T12:33:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@1be2019a]" name="login" duration-ms="721" started-at="2018-10-05T18:08:05Z" data-provider="loginCredentials" finished-at="2018-10-05T18:08:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@test.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qwert123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getRequestWithParams -->
+        <test-method status="PASS" signature="sampleGetTestOne()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="sampleGetTestOne" duration-ms="1035" started-at="2018-10-11T12:33:23Z" finished-at="2018-10-11T12:33:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@1be2019a]" name="login" duration-ms="264" started-at="2018-10-05T18:08:06Z" data-provider="loginCredentials" finished-at="2018-10-05T18:08:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qwe@test.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qwer123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- sampleGetTestOne -->
+        <test-method status="PASS" signature="sampleGetTests()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="sampleGetTests" duration-ms="810" started-at="2018-10-11T12:33:24Z" finished-at="2018-10-11T12:33:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@1be2019a]" name="login" duration-ms="248" started-at="2018-10-05T18:08:06Z" data-provider="loginCredentials" finished-at="2018-10-05T18:08:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qwezx@test.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qwer123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@1be2019a]" name="login" duration-ms="274" started-at="2018-10-05T18:08:07Z" data-provider="loginCredentials" finished-at="2018-10-05T18:08:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qweqwe@test.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qwer123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:LoginModuleTests.DataDrivenLoginTests@1be2019a]" name="teardown" is-config="true" duration-ms="131" started-at="2018-10-05T18:08:07Z" finished-at="2018-10-05T18:08:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- LoginModuleTests.DataDrivenLoginTests -->
+        </test-method> <!-- sampleGetTests -->
+      </class> <!-- RestApiTest.UseCase1Test -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -12,7 +12,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import configProvider.Configuration;
 
 public class BaseClass {
-	public static Logger log = Logger.getLogger("AutomationFramework");
+	public static Logger log = Logger.getLogger("AutomationFramework-WEB");
 	private WebDriver driver;
 
 	ThreadLocal<WebDriver> driverHolder = new ThreadLocal<WebDriver>();

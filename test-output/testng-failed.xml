@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="classes">
-  <listeners>
-    <listener class-name="listeners.ExtentReportListener"/>
-  </listeners>
-  <test name="Test(failed)" parallel="classes">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="LoginModuleTests.LoginTests">
+      <class name="RestApiTest.UseCase1Test">
         <methods>
-          <include name="setup"/>
-          <include name="login"/>
-          <include name="invalidLogin"/>
+          <include name="getRequestSchemaValidation"/>
         </methods>
-      </class> <!-- LoginModuleTests.LoginTests -->
-      <class name="LoginModuleTests.DataDrivenLoginTests">
-        <methods>
-          <include name="login"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- LoginModuleTests.DataDrivenLoginTests -->
+      </class> <!-- RestApiTest.UseCase1Test -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
