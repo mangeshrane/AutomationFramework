@@ -1,21 +1,20 @@
 package RestApiTest;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.matcher.RestAssuredMatchers.equalToPath;
-import static org.hamcrest.MatcherAssert.assertThat; 
-import static io.restassured.module.jsv.JsonSchemaValidator.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasSize;
 
-
-import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
 public class UseCase1Test{
 	
+	// Test with path param
 	@Test(description="To test sample get request and validate Status code ")
 	public void sampleGetTests() {
 		given().
-			get("https://jsonplaceholder.typicode.com/todos/1").
+			pathParam("page", 1).
+			get("https://jsonplaceholder.typicode.com/todos/{page}").
 		then().
 			statusCode(200).
 		log().all();

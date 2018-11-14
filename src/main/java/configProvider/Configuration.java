@@ -10,7 +10,7 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-import testBase.BaseClass;
+import testBase.DriverFactory;
 
 /**
  * @author Mangesh

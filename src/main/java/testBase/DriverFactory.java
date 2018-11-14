@@ -11,7 +11,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import configProvider.Configuration;
 
-public class BaseClass {
+public class DriverFactory {
 	public static Logger log = Logger.getLogger("AutomationFramework-WEB");
 	private WebDriver driver;
 

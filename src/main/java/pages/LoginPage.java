@@ -1,11 +1,16 @@
 package pages;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.LoadableComponent;
 
-public class LoginPage {
+import configProvider.Configuration;
+
+public class LoginPage extends LoadableComponent<LoginPage>{
 	
 	public WebDriver driver;
 	
@@ -47,6 +52,18 @@ public class LoginPage {
 		forgotPassword.click();
 		emailAddress.sendKeys(email);
 		sendPasswordBtn.click();
+	}
+
+	
+	@Override
+	protected void load() {
+		driver.get(Configuration.getConfig("application.url" + "/index.php/"));
+	}
+
+	@Override
+	protected void isLoaded() throws Error {
+		assertTrue(username.isDisplayed());
+		assertTrue(password.isDisplayed());
 	}
 	
 }

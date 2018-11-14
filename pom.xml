@@ -8,6 +8,7 @@
 	<properties>
 		<jre.level>1.8</jre.level>
 		<jdk.level>1.8</jdk.level>
+		<suiteXmlFile>${defaultSuiteFiles}</suiteXmlFile>
 	</properties>
 
 	<dependencies>
@@ -104,7 +105,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>src/test/java/testSuites/LoginModuleTests.xml</suiteXmlFile>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>

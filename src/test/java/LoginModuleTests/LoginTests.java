@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 
 import configProvider.Configuration;
 import pages.LoginPage;
-import testBase.BaseClass;
+import testBase.DriverFactory;
 
-public class LoginTests extends BaseClass{
+public class LoginTests extends DriverFactory{
 	
 	WebDriver driver;
 	LoginPage loginPage;

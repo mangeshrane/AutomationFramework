@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="4788" started-at="2018-10-11T07:03:20Z" finished-at="2018-10-11T07:03:24Z">
+  <suite name="Default suite" duration-ms="4459" started-at="2018-11-13T10:37:31Z" finished-at="2018-11-13T10:37:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4788" started-at="2018-10-11T07:03:20Z" finished-at="2018-10-11T07:03:24Z">
+    <test name="Default test" duration-ms="4459" started-at="2018-11-13T10:37:31Z" finished-at="2018-11-13T10:37:35Z">
       <class name="RestApiTest.UseCase1Test">
-        <test-method status="PASS" signature="getRequestSchemaValidation()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="getRequestSchemaValidation" duration-ms="3943" started-at="2018-10-11T12:33:20Z" finished-at="2018-10-11T12:33:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getRequestSchemaValidation -->
-        <test-method status="PASS" signature="getRequestWithParams()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="getRequestWithParams" duration-ms="3454" started-at="2018-10-11T12:33:20Z" finished-at="2018-10-11T12:33:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getRequestWithParams -->
-        <test-method status="PASS" signature="sampleGetTestOne()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="sampleGetTestOne" duration-ms="1035" started-at="2018-10-11T12:33:23Z" finished-at="2018-10-11T12:33:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sampleGetTestOne -->
-        <test-method status="PASS" signature="sampleGetTests()[pri:0, instance:RestApiTest.UseCase1Test@7fac631b]" name="sampleGetTests" duration-ms="810" started-at="2018-10-11T12:33:24Z" finished-at="2018-10-11T12:33:24Z">
+        <test-method status="PASS" signature="sampleGetTests()[pri:0, instance:RestApiTest.UseCase1Test@1bce4f0a]" name="sampleGetTests" duration-ms="4435" started-at="2018-11-13T16:07:31Z" description="To test sample get request and validate Status code " finished-at="2018-11-13T16:07:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampleGetTests -->
       </class> <!-- RestApiTest.UseCase1Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

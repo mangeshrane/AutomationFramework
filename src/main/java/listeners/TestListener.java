@@ -8,10 +8,10 @@ import org.testng.ITestResult;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import testBase.BaseClass;
+import testBase.DriverFactory;
 
 
-public class TestListener extends BaseClass implements ITestListener {
+public class TestListener extends DriverFactory implements ITestListener {
 
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -46,7 +46,7 @@ public class TestListener extends BaseClass implements ITestListener {
 
         //Get driver from BaseTest and assign to local webdriver variable.
         Object testClass = iTestResult.getInstance();
-        WebDriver webDriver = ((BaseClass) testClass).getDriver();
+        WebDriver webDriver = ((DriverFactory) testClass).getDriver();
 
         //Take base64Screenshot screenshot.
         String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).
